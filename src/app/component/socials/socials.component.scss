@@ -1,0 +1,10 @@
+.socials{
+      background: #fff;
+      display: flex;
+    justify-content: center;
+    gap: 20px;
+    .social-media{
+      cursor: pointer;
+      transition: all 0.25s ease-in-out;
+    }
+  }

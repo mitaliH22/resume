@@ -1,0 +1,36 @@
+$blue: #2c36fe;
+
+
+.resume-page{
+
+    .heading-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    .heading{
+      font-size: 35px;
+      font-weight: bold;
+    }
+.box{
+  display: block;
+    background: $blue;
+      height: 20px;
+      width: 20px;
+  }
+  }
+
+.resume-container{
+  margin: 0 auto;
+  width: 40%;
+  max-width: 100%;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+}

@@ -1,0 +1,17 @@
+$blue: #2c36fe;
+.heading-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    .heading{
+      font-size: 35px;
+      font-weight: bold;
+    }
+.box{
+  display: block;
+    background: $blue;
+      height: 20px;
+      width: 20px;
+  }
+  }

@@ -1,0 +1,15 @@
+
+
+section{
+font-family: 'Poppins', sans-serif;
+}
+
+.page{
+  background: #e6dace;
+  display: grid;
+    height: auto;
+    width: 100%;
+    min-height: 550px;
+    grid-template-rows: repeat(2, min-content) 1fr;
+    box-sizing: border-box;
+}
