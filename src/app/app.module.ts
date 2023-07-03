@@ -9,8 +9,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { ResumeComponent } from './component/resume/resume.component';
 import { CardComponent } from './component/card/card.component';
 import { ProjectsComponent } from './component/projects/projects.component';
-import { ContactComponent } from './component/contact/contact.component';
 import { PageComponent } from './component/page/page.component';
+import { ContactComponent } from './component/contact/contact.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -30,6 +30,7 @@ const routes: Routes = [
     CardComponent,
     ProjectsComponent,
     PageComponent,
+    ContactComponent,
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],

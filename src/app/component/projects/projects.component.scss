@@ -1,4 +1,10 @@
 $blue: #2c36fe;
+
+.project-page{
+    margin: 0 auto;
+  width: 40%;
+  max-width: 100%;
+}
 .heading-container{
     display: flex;
     align-items: center;
@@ -14,4 +20,17 @@ $blue: #2c36fe;
       height: 20px;
       width: 20px;
   }
+  }
+
+  .project-container{
+    background: #fff;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+    display: flex;
+    margin-top: 50px;
+    .project-details,.project-img{
+      flex: 0.5;
+    }
+    .project-details{
+      padding: 30px 30px 0 30px;
+    }
   }

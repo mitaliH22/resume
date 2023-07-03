@@ -1,3 +1,29 @@
-
-<p>contact works!</p>
-
+<app-page>
+  <section class="contact-page">
+  <div class="heading-container">
+  <span class="box"></span>
+  <p class="heading">{{ title }}</p>
+  </div>
+<form action="" class="contact-form">
+  <div class="contact-name">
+    <div class="name-field">
+  <label for="fname">First Name <span class="mandatory">*</span></label>
+  <input type="text" name="" id="">
+  </div>
+  <div class="name-field">
+  <label for="lname">Last Name <span class="mandatory">*</span></label>
+  <input type="text" name="" id="">
+  </div>
+  </div>
+  <label for="email">Email <span class="mandatory">*</span></label>
+  <input type="email" name="" id="">
+  <label for="subject">Subject</label>
+  <input type="text" name="" id="">
+  <label for="message">Message</label>
+  <textarea id="message" name="message" rows="4" cols="50"></textarea>
+  <div class="send-btn">
+  <input type="submit" class="send">
+  </div>
+</form>
+</section>
+</app-page>

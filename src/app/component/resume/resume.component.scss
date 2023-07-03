@@ -1,8 +1,6 @@
 $blue: #2c36fe;
 
-
 .resume-page{
-
     .heading-container{
     display: flex;
     align-items: center;
@@ -31,6 +29,19 @@ $blue: #2c36fe;
   justify-content: space-between;
   align-items: center;
   text-transform: capitalize;
+  .download-btn{
+    color: #fff;
+    text-decoration: none;
+    background: $blue;
+    border: 1px solid transparent;
+    padding: 5px 20px;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+    &:hover{
+      background: #e6dace;
+      border: 1px solid $blue;
+      color: black;
+    }
+  }
 }
-
 }
