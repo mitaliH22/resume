@@ -1,36 +1,24 @@
 <app-page>
-  <div class="project-page">
+  
     <div class="heading-container">
       <span class="box"></span>
       <p class="heading">{{ title }}</p>
     </div>
-    <p>{{ about }}</p>
-    <div class="project-page-container">
-      <div class="project-container">
-        <div class="project-details">
-          <p>Project Name</p>
-          <p>Role</p>
-          <p>
-            I'm a paragraph. Click here to add your own text and edit me. It’s
-            easy. Just click “Edit Text” or double click me to add your own
-            content and make changes to the font.
-          </p>
-        </div>
-        <img src="./assets/Leaflet.png" alt="" class="project-img" />
-      </div>
 
-      <div class="project-container">
+    <p class="demo">{{ about }}</p>
+    <div class="project-page-container">
+
+      <div class="project-container" *ngFor="let project of projects; index as index">
         <div class="project-details">
-          <p>Project Name</p>
-          <p>Role</p>
+          <span class="border-right"></span>
+          <p class="project-title">{{ project.title }}</p>
+          <p class="project-role">{{ project.role }}</p>
           <p>
-            I'm a paragraph. Click here to add your own text and edit me. It’s
-            easy. Just click “Edit Text” or double click me to add your own
-            content and make changes to the font.
+            {{ project.description }}
           </p>
         </div>
-        <img src="./assets/Leaflet.png" alt="" class="project-img" />
+        <img src="{{ project.src }}" alt="" class="project-img" />
       </div>
     </div>
-  </div>
+
 </app-page>

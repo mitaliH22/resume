@@ -1,14 +1,8 @@
 section {
-  position: relative;
-  font-family: 'Poppins', sans-serif;
+    position: relative;
     height: 100vh;
-    background: linear-gradient(
-    to right,
-    #e5dbce 0%,
-    #e5dbce 45%,
-    white 45%,
-    white 100%
-  );
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #e5dbce 0%, #e5dbce 45%, white 45%, white 100%);
   .card {
     display: flex;
     position: absolute;
@@ -22,44 +16,62 @@ section {
       box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
       .card-title-inside {
         padding: 50px 100px;
-        text-align: center;
-        .profile-img{
-          img{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+        .name {
+          font-size: 27px;
+          font-weight: bold;
+          line-height: 1.2em;
+          margin-top: 0;
+          border-bottom: 1px solid;
+          padding-bottom: 20px;
+          margin-bottom: 0;
+        }
+        .profile-img {
+          img {
             border-radius: 50%;
           }
         }
+
       }
     }
-    .card-content{
+    .card-content {
       background-color: white;
       padding: 0 30px;
-      .greetings{
-            font-size: 90px;
-      font-weight: bold;
-    margin-bottom: 0;
-    margin-top: 0;
+      .about-you{
+        line-height: 25px;
+        letter-spacing: 0.09em;
       }
-      .greetings-below{
+      .greetings {
+        font-size: 90px;
+        font-weight: bold;
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+      .greetings-below {
         margin-top: 0;
         font-size: 20px;
       }
-      .button-group{
+      .button-group {
         display: flex;
         gap: 20px;
-        a{
+        a {
           text-decoration: none;
-    border: 1px solid black;
-    color: black;
-    text-transform: uppercase;
-    padding: 5px 20px;
-    transition: all 0.5s ease-in-out;
-    &:hover{
-      background-color:#2c36fe;
-      color: white;
-      border: 1px solid transparent;
-    }
+          border: 1px solid black;
+          color: black;
+          text-transform: uppercase;
+          padding: 5px 20px;
+          transition: all 0.5s ease-in-out;
+          &:hover {
+            background-color: #2c36fe;
+            color: white;
+            border: 1px solid transparent;
+          }
         }
       }
     }
   }
 }
+
+

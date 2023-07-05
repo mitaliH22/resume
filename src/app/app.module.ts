@@ -11,6 +11,7 @@ import { CardComponent } from './component/card/card.component';
 import { ProjectsComponent } from './component/projects/projects.component';
 import { PageComponent } from './component/page/page.component';
 import { ContactComponent } from './component/contact/contact.component';
+import { SkillsComponent } from './component/skills/skills.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -31,6 +32,7 @@ const routes: Routes = [
     ProjectsComponent,
     PageComponent,
     ContactComponent,
+    SkillsComponent,
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],
