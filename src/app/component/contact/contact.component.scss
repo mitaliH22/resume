@@ -44,6 +44,7 @@ $blue: #2c36fe;
       display: flex;
       justify-content: flex-start;
       .send{
+        border-radius: 999em;
         border: 2px solid transparent;
         color: white;
         background-color: $blue;
@@ -85,4 +86,29 @@ outline: none;
 
 label{
   font-weight: bold ;
+}
+
+@media (max-width: 600px){
+  .contact-page{
+    .contact-form{
+      padding: 20px;
+      margin: 20px;
+      gap: 10px;
+      .contact-name{
+        flex-direction: column;
+        gap:10px;
+        .name-field{
+           &:last-child{
+          margin-left: 0;
+        }
+        }
+      }
+      .send-btn{
+        justify-content: center;
+      }
+    }
+    textarea{
+          height: 3em;
+    }
+  }
 }

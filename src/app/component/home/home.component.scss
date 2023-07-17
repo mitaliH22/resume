@@ -1,24 +1,24 @@
 section {
-    position: relative;
-    height: 100vh;
+  position: relative;
+  height: 100vh;
   font-family: "Poppins", sans-serif;
   background: linear-gradient(to right, #e5dbce 0%, #e5dbce 45%, white 45%, white 100%);
-  .card {
+  .custom-card {
     display: flex;
     position: absolute;
     // top: 10%;
     left: 50%;
     transform: translate(-50%, 50%);
-    .card-title {
+    .custom-card-title {
       background: #f4ece6;
       height: auto;
       width: 100%;
       box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
-      .card-title-inside {
+      .custom-card-title-inside {
         padding: 50px 100px;
         display: flex;
-    flex-direction: column;
-    align-items: center;
+        flex-direction: column;
+        align-items: center;
         .name {
           font-size: 27px;
           font-weight: bold;
@@ -33,13 +33,12 @@ section {
             border-radius: 50%;
           }
         }
-
       }
     }
-    .card-content {
+    .custom-card-content {
       background-color: white;
       padding: 0 30px;
-      .about-you{
+      .about-you {
         line-height: 25px;
         letter-spacing: 0.09em;
       }
@@ -58,6 +57,7 @@ section {
         gap: 20px;
         a {
           text-decoration: none;
+          border-radius: 999em;
           border: 1px solid black;
           color: black;
           text-transform: uppercase;
@@ -74,4 +74,88 @@ section {
   }
 }
 
+@media (max-width: 600px) {
+  section {
+      background: linear-gradient(100deg, #e6dace, transparent);
+    .custom-card {
+      flex-direction: column;
+      transform: none;
+      left: 0%;
+      margin:20px;
+      .custom-card-title {
+        position: relative;
+        .custom-card-title-inside {
+          padding: 50px;
+          .name {
+            font-size: 20px;
+            margin-top: 5px;
+            padding-bottom: 0;
+            text-align: center;
+            border: none;
+            &:after {
+              content: "";
+              width: 150px;
+              background: black;
+              height: 1px;
+              display: block;
+              margin-top: 10px;
+            }
+          }
+          .designation{
+            margin: 0;
+          }
+        }
+      }
+      app-socials{
+        position: absolute;
+        bottom: 2%;
+        width: 100%;
+      }
+      .custom-card-content {
+      .greetings {
+        font-size: 40px;
+    }
+    .greetings-below{
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+    .about-you{
+      font-size: 12px;
+    }
+    .button-group {
+      font-size: 12px;
+    a{
+      border-radius: 999em;
+    }
+}
+  }
+}
+  }
+}
 
+@media screen and (min-width: 700px) and (max-width: 890px){
+section{
+  background: linear-gradient(100deg, #e6dace, transparent);
+.custom-card{
+      transform: translate(-50%, 25%);
+      .custom-card-title{
+        .custom-card-title-inside{
+        padding: 50px 60px;
+      }
+      }
+
+      .custom-card-content{
+        .greetings{
+          font-size: 60px;
+        }
+        .greetings-below{
+          font-size: 17px;
+        }
+        .about-you{
+          font-size: 14px;
+          margin-top: 1rem;
+        }
+      }
+}
+}
+}

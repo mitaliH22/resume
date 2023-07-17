@@ -1,5 +1,5 @@
-<app-page>
-  
+<app-page class="">
+
     <div class="heading-container">
       <span class="box"></span>
       <p class="heading">{{ title }}</p>
@@ -17,7 +17,10 @@
             {{ project.description }}
           </p>
         </div>
-        <img src="{{ project.src }}" alt="" class="project-img" />
+        <div class="projectImg">
+          <img src="{{ project.src }}" alt="" class="project-img" />
+        </div>
+
       </div>
     </div>
 

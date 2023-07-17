@@ -36,4 +36,14 @@ $blue: #2c36fe;
       }
     }
   }
+
 }
+
+  @media (max-width:600px){
+   .skills{
+    ul{
+          grid-template-columns: 1fr;
+    row-gap: 20px;
+    }
+   }
+  }

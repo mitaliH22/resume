@@ -25,3 +25,20 @@
   font-size: 25px;
   font-weight: bold;
 }
+
+@media (max-width: 768px){
+  .white-card{
+    flex-direction:column;
+       margin: 20px;
+    padding: 20px;
+    .work-data{
+      font-size:14px;
+      p{
+        margin:0;
+      }
+    }
+    .work-details{
+      font-size: 12px;
+    }
+  }
+}

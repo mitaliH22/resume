@@ -31,9 +31,6 @@ $blue: #2c36fe;
     &:last-child{
       margin-bottom: 50px;
     }
-    .project-details,.project-img{
-      flex: 0.5;
-    }
     .project-details{
       padding: 30px 30px 0 30px;
       position: relative;
@@ -62,4 +59,28 @@ $blue: #2c36fe;
 .demo{
   margin: 0 auto;
   width: 700px;
+}
+
+@media (max-width: 600px){
+  .heading-container{
+    .box {
+    height: 15px;
+    width: 15px;
+}
+.heading {
+        font-size: 25px;
+    margin-top: 1rem;
+}
+  }
+  .demo{
+    width: 100%;
+    padding: 20px;
+  }
+  .project-container{
+    width: unset;
+    flex-direction: column;
+    margin: 20px;
+    align-items: center;
+
+  }
 }

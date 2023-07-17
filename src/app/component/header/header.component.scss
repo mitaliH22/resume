@@ -42,4 +42,39 @@ header{
       }
      }
   }
+  .hamburger{
+    display: none;
+  }
+  @media (max-width: 768px){
+.header-name{
+  .name{
+    font-size: 17px;
+    margin-bottom:0;
+    .designation{
+      font-size: 15px;
+    }
+  }
 }
+.hamburger{
+  display: block;
+  width: 50px;
+  height: 50px;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    overflow: hidden;
+  }
+}
+  .header-option-list{
+    display: none;
+  }
+}
+}
+
+@media (max-width: 600px ){
+      header{
+    padding: 20px 30px;
+  }
+}
+

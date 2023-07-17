@@ -31,6 +31,7 @@ $blue: #2c36fe;
   text-transform: capitalize;
   .download-btn{
     color: #fff;
+    border-radius:999em;
     text-decoration: none;
     background: $blue;
     border: 1px solid transparent;
@@ -44,9 +45,61 @@ $blue: #2c36fe;
     }
   }
 }
+@media (max-width: 600px){
+  .resume-container{
+    width: 100%;
+    .flex{
+      justify-content: center;
+      gap:30px;
+      .resumePageheading{
+        font-size:18px;
+        margin-bottom:0;
+            }
+      .download-btn{
+        border-radius: 999em;
+            padding: 2px 15px;
+
+      }
+    }
+
+  }
+}
 }
 
 .resumePageheading{
   font-size: 25px;
   font-weight: bold;
+}
+
+
+@media (max-width: 600px){
+  .resume-page{
+    .heading-container{
+      .box{
+        height:15px;
+        width:15px;
+      }
+      .heading{
+        font-size:25px;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+ @media screen and (min-width: 700px) and (max-width: 890px){
+  .resume-page{
+    .heading-container{
+      .heading{
+            margin-bottom: 0;
+      }
+    }
+    .resume-container{
+    width: 100%;
+  }
+  .flex{
+    justify-content: space-around;
+  }
+  }
+
 }
