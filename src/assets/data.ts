@@ -48,35 +48,27 @@ export const projectData: project[] = [
 export const resumeData: resume[] = [
   {
     company_period: '2022-present',
-    company_role: 'Designer',
-    company_name: 'Test Company',
-    company_location: 'Somewhere',
+    company_role: 'FrontEndDesigner',
+    company_name: 'Sunarc technologies',
+    company_location: 'Bikaner, Rajasthan',
     company_description:
-      "I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me to add your own content and make changes to the fon",
-  },
-  {
-    company_period: '2020-2022',
-    company_role: 'Designer',
-    company_name: 'Test Company 2',
-    company_location: 'Somewhere',
-    company_description:
-      "I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me to add your own content and make changes to the fon",
+      'SunArc Technologies, the Leading Software Development Company is providing end-to-end IT services & solutions to our esteemed customers in multiple industries and domains for the past 19+ years.',
   },
 ];
 
 export const educationData: studies[] = [
   {
-    college_period: '2019 - 2021',
-    college_name: 'UNIVERSITY NAME',
+    college_period: '2022 - Present',
+    college_name: 'MGSU',
     college_degree: 'Post Graduation',
-    college_location: 'somewhere',
-    college_description: `I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.',`,
+    college_location: 'Bikaner, Rajasthan',
+    college_description: `Currently enrolled in the Masters programme in the computer science `,
   },
   {
-    college_period: '2016 - 2019',
-    college_name: 'UNIVERSITY NAME',
+    college_period: '2019 - 2022',
+    college_name: 'MGSU',
     college_degree: 'Graduation',
-    college_location: 'somewhere',
-    college_description: `I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.',`,
+    college_location: 'Bikaner, Rajasthan',
+    college_description: `Completed Bachelor's in computer applications from the college , in the tenure had the opportunity to deep dive into several technologies as well as basic hardware knowledge.`,
   },
 ];

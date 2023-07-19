@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  name: string = 'John Doe';
+  name: string = 'Mitali Harsh';
   designation: string = 'Frontend developer';
 }

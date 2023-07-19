@@ -1,9 +1,11 @@
 footer{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 20px 50px;
   .footer-details{
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   .details{
     text-align: center;
