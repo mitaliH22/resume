@@ -20,4 +20,11 @@ describe('PageComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+    it('should render page layout', () => {
+      fixture.detectChanges();
+      const compiled = fixture.nativeElement as HTMLElement;
+      expect(compiled.querySelector('section.page')).toBeTruthy();
+    });
+  
 });

@@ -8,9 +8,8 @@ describe('SocialsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SocialsComponent ]
-    })
-    .compileComponents();
+      declarations: [SocialsComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(SocialsComponent);
     component = fixture.componentInstance;
@@ -19,5 +18,11 @@ describe('SocialsComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should create container for socials', () => {
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('div.socials')).toBeTruthy();
   });
 });

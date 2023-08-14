@@ -12,14 +12,10 @@ import { ProjectsComponent } from './component/projects/projects.component';
 import { PageComponent } from './component/page/page.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { SkillsComponent } from './component/skills/skills.component';
+import { AppRoutingModule } from './app-routing.module';
 
-const routes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: 'resume', component: ResumeComponent },
-  { path: 'projects', component: ProjectsComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-];
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,8 +30,9 @@ const routes: Routes = [
     ContactComponent,
     SkillsComponent,
   ],
-  imports: [BrowserModule, RouterModule.forRoot(routes)],
+  imports: [BrowserModule, RouterModule.forRoot([]), AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
+
 export class AppModule {}

@@ -1,12 +1,19 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './component/header/header.component';
+import "./app-routing.spec";
+import { ResumeComponent } from './component/resume/resume.component';
+import { Router } from '@angular/router';
+import { RouterTestingModule } from '@angular/router/testing';
+import { routes } from './app-routing.module';
 
 describe('AppComponent', () => {
+  let router: Router;
+
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [
-        AppComponent
-      ],
+      imports: [RouterTestingModule.withRoutes(routes)],
+      declarations: [AppComponent, HeaderComponent, ResumeComponent],
     }).compileComponents();
   });
 
@@ -16,16 +23,12 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'resume-app'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('resume-app');
-  });
 
-  it('should render title', () => {
+  it('should render header', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('resume-app app is running!');
+    expect(compiled.querySelector('app-header')).toBeTruthy();
   });
+
 });

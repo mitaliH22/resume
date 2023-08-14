@@ -20,4 +20,10 @@ describe('SkillsComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+    it('should create container for skills', () => {
+      fixture.detectChanges();
+      const compiled = fixture.nativeElement as HTMLElement;
+      expect(compiled.querySelector('div.skills')).toBeTruthy();
+    });
 });
