@@ -30,7 +30,7 @@ import { AppRoutingModule } from './app-routing.module';
     ContactComponent,
     SkillsComponent,
   ],
-  imports: [BrowserModule, RouterModule.forRoot([]), AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })

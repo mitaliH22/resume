@@ -16,9 +16,7 @@ export const routes: Routes = [
 
 @NgModule({
   declarations: [],
-  imports: [
-    RouterModule,
-    CommonModule
-  ]
+  imports: [RouterModule.forRoot(routes), CommonModule],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
